@@ -10,11 +10,17 @@
             padding: 20px;
         }
 
-        table {
+        .table-container {
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
             background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -26,6 +32,11 @@
 
         th {
             background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
         .header {
@@ -33,37 +44,118 @@
             font-weight: bold;
             padding: 20px;
             text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .spacer {
+            height: 20px;
+        }
+
+        td.contains-name {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <div class="header">멸망전 Season 9 조별목록</div>
-    <table>
-        <thead>
-            <tr>
-                <th>A조</th>
-                <th>B조</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>팀 윤선영</td>
-                <!-- 위 A 아래 B-->
-                <td>팀 이학태</td>
-            </tr>
-            <tr>
-                <td>팀 이호윤</td>
-                <td>팀 민경환</td>
-            </tr>
-            <tr>
-                <td>팀 김대용</td>
-                <td>팀 전믿음</td>
-            </tr>
-            <tr>
-                <td>팀 송건우</td>
-                <td>팀 김의훈</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="header">2023 롤팡 멸망전 시즌9</div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Group A</th>
+                    <th>Team 윤선영</th>
+                    <th>Team 이호윤</th>
+                    <th>Team 김대용</th>
+                    <th>Team 송건우</th>
+                </tr>                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOP</td>
+                    <td>최현진</td>
+                    <td class="contains-name">이호윤</td>
+                    <td>고귀한</td>
+                    <td>이찬규</td>
+                </tr>
+                <tr>
+                    <td>JUG</td>
+                    <td>염성필</td>
+                    <td>방진성</td>
+                    <td>김동균</td>
+                    <td class="contains-name">송건우</td>
+                </tr>
+                <tr>
+                    <td>MID</td>
+                    <td>김용호</td>
+                    <td>김창영</td>
+                    <td>이원웅</td>
+                    <td>안길용</td>
+                </tr>
+                <tr>
+                    <td>ADC</td>
+                    <td>윤동빈</td>
+                    <td>유경은</td>
+                    <td class="contains-name">김대용</td>
+                    <td>강석진</td>
+                </tr>
+                <tr>
+                    <td>SUP</td>
+                    <td class="contains-name">윤선영</td>
+                    <td>배영환</td>
+                    <td>김태윤</td>
+                    <td>권영재</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="spacer"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Group B</th>
+                    <th>Team 이학태</th>
+                    <th>Team 민경환</th>
+                    <th>Team 전믿음</th>
+                    <th>Team 김의훈</th>
+                </tr>             
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOP</td>
+                    <td>권오준</td>
+                    <td class="contains-name">민경환</td>
+                    <td>유건아</td>
+                    <td>김충도</td>
+                </tr>
+                <tr>
+                    <td>JUG</td>
+                    <td>정수환</td>
+                    <td>이서연</td>
+                    <td>권동호</td>
+                    <td>강희구</td>
+                </tr>
+                <tr>
+                    <td>MID</td>
+                    <td class="contains-name">이학태</td>
+                    <td>박동현</td>
+                    <td class="contains-name">전믿음</td>
+                    <td class="contains-name">김의훈</td>
+                </tr>
+                <tr>
+                    <td>ADC</td>
+                    <td>서정필</td>
+                    <td>이성희</td>
+                    <td>김두현</td>
+                    <td>최석규</td>
+                </tr>
+                <tr>
+                    <td>SUP</td>
+                    <td>김형균</td>
+                    <td>이봉규</td>
+                    <td>차우진</td>
+                    <td>리송이</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
