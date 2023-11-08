@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <title>조 팀 목록</title>
     <style>
-         body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             padding: 20px;
         }
 
-        .table-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .table {
+            width: 48%; /* 각 테이블의 너비를 조절합니다. */
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,7 +33,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: fixed; /* 테이블의 셀 크기를 고정 */
+            table-layout: fixed;
         }
 
         th, td {
@@ -40,68 +51,144 @@
             background-color: #f9f9f9;
         }
 
-        .header {
-            font-size: 24px;
-            font-weight: bold;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 20px;
+        .blue-row {
+            background-color: blue;
+            color: white; /* 텍스트 색상 설정 */
         }
 
-        .spacer {
-            height: 20px;
-        }
-
-        td.contains-name {
-            background-color: yellow;
+        .red-row {
+            background-color: red;
+            color: white; /* 텍스트 색상 설정 */
         }
     </style>
 </head>
 <body>
-    <div class="header">11월 7일 재호팀 (1:2 패배)</div>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>세트/진영/승패</th>
-                    <th>TOP</th>
-                    <th>JUG</th>
-                    <th>MID</th>
-                    <th>ADC</th>
-                    <th>SUP</th>
-                </tr>                
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1세트(블루) 승리</td>
-                    <td>크산테</td>
-                    <td>오공</td>
-                    <td>오리아나</td>
-                    <td>케이틀린</td>
-                    <td>밀리오</td>
-                </tr>
-                <tr>
-                    <td>2세트(레드) 패배</td>
-                    <td>아트록스</td>
-                    <td>비에고</td>
-                    <td>오리아나</td>
-                    <td>진</td>
-                    <td>모르가나</td>
-                </tr>
-                <tr>
-                    <td>3세트(블루) 패배</td>
-                    <td>그웬</td>
-                    <td>바이</td>
-                    <td>갈리오</td>
-                    <td>바루스</td>
-                    <td>세라핀</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="spacer"></div>
-        <table>
-            
-        </table>
+    <div class="header">11월 7일 의훈팀 VS 재호팀 (1:2 패배)</div>
+    <div class="container">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>세트</th>
+                        <th>TOP</th>
+                        <th>JUG</th>
+                        <th>MID</th>
+                        <th>ADC</th>
+                        <th>SUP</th>
+                    </tr>
+                    <tr>
+                        <td class="blue-row">1세트</td>
+                        <td>크산테</td>
+                        <td>오공</td>
+                        <td>오리아나</td>
+                        <td>케이틀린</td>
+                        <td>밀리오</td>
+                    </tr>
+                    <tr>
+                        <td class="red-row">2세트</td>
+                        <td>아트록스</td>
+                        <td>비에고</td>
+                        <td>오리아나</td>
+                        <td>진</td>
+                        <td>모르가나</td>
+                    </tr>
+                    <tr>
+                        <td class="blue-row">3세트</td>
+                        <td>그웬</td>
+                        <td>바이</td>
+                        <td>갈리오</td>
+                        <td>바루스</td>
+                        <td>세라핀</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 첫 번째 테이블 데이터 -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>세트</th>
+                        <th>TOP</th>
+                        <th>JUG</th>
+                        <th>MID</th>
+                        <th>ADC</th>
+                        <th>SUP</th>
+                    </tr>
+                    <tr>
+                        <td>1세트</td>
+                        <td>오른</td>
+                        <td>마오카이</td>
+                        <td>요네</td>
+                        <td>이즈리얼</td>
+                        <td>카르마</td>
+                    </tr>
+                    <tr>
+                        <td>2세트</td>
+                        <td>케넨</td>
+                        <td>자르반 4세</td>
+                        <td>아지르</td>
+                        <td>애쉬</td>
+                        <td>노틸러스</td>
+                    </tr>
+                    <tr>
+                        <td>3세트</td>
+                        <td>케넨</td>
+                        <td>비에고</td>
+                        <td>블라디미르</td>
+                        <td>자야</td>
+                        <td>라칸</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 두 번째 테이블 데이터 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <p>1세트 승리 2,3세트 패배 상대방 밴픽 추가예정</p>
+    </div>
+
+    <div class="header">11월 8일 의훈팀 VS </div>
+    <div class="container">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>세트</th>
+                        <th>TOP</th>
+                        <th>JUG</th>
+                        <th>MID</th>
+                        <th>ADC</th>
+                        <th>SUP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 첫 번째 테이블 데이터 -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>세트</th>
+                        <th>TOP</th>
+                        <th>JUG</th>
+                        <th>MID</th>
+                        <th>ADC</th>
+                        <th>SUP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 두 번째 테이블 데이터 -->
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
